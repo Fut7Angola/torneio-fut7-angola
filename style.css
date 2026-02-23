@@ -48,7 +48,11 @@ body {
   color: #facc15;
 }
 
-/* ====== ATLETAS ====== */
+.site-header .container {
+  display: flex;
+  align-items: center;
+  
+  /* ====== ATLETAS ====== */
 .atletas-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
