@@ -27,12 +27,13 @@ body {
 }
 
 .site-header h1 {
-  margin: 0;
+  margin-right: auto;
   color: #facc15;
 }
 
 .site-header nav {
-  margin-top: 10px;
+  margin-left: 12px;
+
 }
 
 .site-header nav a {
