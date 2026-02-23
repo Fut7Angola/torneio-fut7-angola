@@ -1,124 +1,161 @@
 <!DOCTYPE html>
 <html lang="pt-PT">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Torneio de Fut 7 Angola</title>
-  <meta name="description" content="Torneio de Fut 7 Angola – competição de futebol 7 em Luanda, Angola, com 6 equipas, 3 dias de competição e jogo de exibição com ex-glórias do futebol angolano." />
+  <meta charset="UTF-8">
+  <title>Torneio Fut 7 Angola</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
-    body { margin:0; font-family: Arial, Helvetica, sans-serif; background:#f4f4f4; color:#222; }
-    header { background:#0b3d2e; color:#fff; padding:20px; }
-    header h1 { margin:0; }
-    nav { background:#06291f; }
-    nav ul { list-style:none; margin:0; padding:0; display:flex; flex-wrap:wrap; }
-    nav li { margin:0; }
-    nav a { display:block; padding:12px 16px; color:#fff; text-decoration:none; font-size:14px; }
-    nav a:hover { background:#0b3d2e; }
-    .container { max-width:1100px; margin:auto; padding:20px; background:#fff; }
-    section { margin-bottom:40px; }
-    h2 { border-left:5px solid #0b3d2e; padding-left:10px; }
-    .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:20px; }
-    .card { border:1px solid #ddd; padding:15px; border-radius:6px; background:#fafafa; }
-    footer { background:#06291f; color:#fff; text-align:center; padding:15px; font-size:14px; }
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #0f0f0f;
+      color: #ffffff;
+    }
+
+    header {
+      background-color: #000;
+      padding: 20px 40px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    header img {
+      height: 70px;
+    }
+
+    nav a {
+      color: #fff;
+      margin-left: 20px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 14px;
+    }
+
+    nav a:hover {
+      color: #f5c400;
+    }
+
+    .hero {
+      background: linear-gradient(to bottom, rgba(0,0,0,0.6), rgba(0,0,0,0.9)),
+                  url('https://images.unsplash.com/photo-1521412644187-c49fa049e84d') center/cover no-repeat;
+      text-align: center;
+      padding: 120px 20px;
+    }
+
+    .hero h1 {
+      font-size: 48px;
+      margin-bottom: 20px;
+      color: #f5c400;
+    }
+
+    .hero p {
+      font-size: 20px;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    .section {
+      padding: 60px 40px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .section h2 {
+      color: #f5c400;
+      margin-bottom: 20px;
+    }
+
+    .info-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      margin-top: 30px;
+    }
+
+    .info-box {
+      background-color: #1a1a1a;
+      padding: 25px;
+      border-radius: 8px;
+    }
+
+    footer {
+      background-color: #000;
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+      color: #aaa;
+    }
+
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        gap: 15px;
+      }
+      nav a {
+        margin: 0 10px;
+      }
+      .hero h1 {
+        font-size: 36px;
+      }
+    }
   </style>
 </head>
 <body>
 
 <header>
-  <h1>Torneio de Fut 7 Angola</h1>
-  <p>Luanda – Angola | Início de Junho</p>
+  <!-- SUBSTITUI logo.png pelo nome do teu ficheiro de logótipo -->
+  <img src="logo.png" alt="Torneio Fut 7 Angola">
+  <nav>
+    <a href="index.html">Início</a>
+    <a href="sobre.html">Sobre</a>
+    <a href="calendario.html">Calendário</a>
+    <a href="equipas.html">Equipas</a>
+    <a href="resultados.html">Resultados</a>
+    <a href="premios.html">Prémios</a>
+    <a href="parceiros.html">Parceiros</a>
+    <a href="regras.html">Regras</a>
+    <a href="contactos.html">Contactos</a>
+  </nav>
 </header>
 
-<nav>
-  <ul>
-    <li><a href="#home">Home</a></li>
-    <li><a href="#sobre">Sobre</a></li>
-    <li><a href="#calendario">Calendário</a></li>
-    <li><a href="#resultados">Resultados</a></li>
-    <li><a href="#equipas">Equipas</a></li>
-    <li><a href="#atletas">Atletas</a></li>
-    <li><a href="#premios">Prémios</a></li>
-    <li><a href="#exibicao">Jogo de Exibição</a></li>
-    <li><a href="#parceiros">Parceiros</a></li>
-    <li><a href="#regulamento">Regulamento</a></li>
-    <li><a href="#contactos">Contactos</a></li>
-  </ul>
-</nav>
-
-<div class="container">
-
-<section id="home">
-  <h2>Bem-vindos</h2>
-  <p>O <strong>Torneio de Fut 7 Angola</strong> reúne 6 equipas, divididas em dois grupos, para três dias de futebol, emoção e fair-play em Luanda.</p>
+<section class="hero">
+  <h1>Torneio Fut 7 Angola</h1>
+  <p>
+    Três dias de competição, talento e espetáculo em Luanda.
+    As melhores equipas, os melhores atletas e um jogo de exibição com
+    ex-glórias do futebol angolano.
+  </p>
 </section>
 
-<section id="sobre">
-  <h2>Sobre o Torneio</h2>
-  <p>O torneio tem como objetivo promover o futebol de sete, valorizando atletas, equipas e o espírito competitivo, num ambiente organizado e profissional.</p>
-</section>
+<section class="section">
+  <h2>Informações do Torneio</h2>
 
-<section id="calendario">
-  <h2>Calendário</h2>
-  <ul>
-    <li><strong>Dia 1:</strong> Fase de Grupos</li>
-    <li><strong>Dia 2:</strong> Meias-finais</li>
-    <li><strong>Dia 3:</strong> Jogo de Exibição + Final</li>
-  </ul>
-</section>
+  <div class="info-grid">
+    <div class="info-box">
+      <h3>📍 Local</h3>
+      <p>Luanda, Angola</p>
+    </div>
 
-<section id="resultados">
-  <h2>Resultados</h2>
-  <p>Os resultados serão atualizados diariamente durante o torneio.</p>
-</section>
+    <div class="info-box">
+      <h3>📅 Data</h3>
+      <p>Início de Junho</p>
+    </div>
 
-<section id="equipas">
-  <h2>Equipas</h2>
-  <div class="grid">
-    <div class="card"><strong>Grupo A</strong><br>Equipa A1<br>Equipa A2<br>Equipa A3</div>
-    <div class="card"><strong>Grupo B</strong><br>Equipa B1<br>Equipa B2<br>Equipa B3</div>
+    <div class="info-box">
+      <h3>⚽ Formato</h3>
+      <p>6 equipas, 2 grupos, fase final e grande final</p>
+    </div>
+
+    <div class="info-box">
+      <h3>⭐ Destaque</h3>
+      <p>Jogo de exibição com ex-glórias do futebol angolano</p>
+    </div>
   </div>
 </section>
 
-<section id="atletas">
-  <h2>Atletas</h2>
-  <p>Lista de atletas por equipa (a definir).</p>
-</section>
-
-<section id="premios">
-  <h2>Prémios</h2>
-  <ul>
-    <li>Campeão, Vice-Campeão e 3.º Classificado</li>
-    <li>Melhor Jogador (MVP)</li>
-    <li>Melhor Marcador</li>
-    <li>Melhor Guarda-Redes</li>
-    <li>Prémio Fair-Play</li>
-  </ul>
-</section>
-
-<section id="exibicao">
-  <h2>Jogo de Exibição</h2>
-  <p>Antes da final, realiza-se um jogo especial com ex-glórias do futebol angolano, celebrando a história do desporto nacional.</p>
-</section>
-
-<section id="parceiros">
-  <h2>Parceiros</h2>
-  <p>Espaço dedicado aos parceiros e patrocinadores do torneio.</p>
-</section>
-
-<section id="regulamento">
-  <h2>Regulamento</h2>
-  <p>6 equipas, 2 grupos de 3. Os dois primeiros de cada grupo apuram-se para as meias-finais.</p>
-</section>
-
-<section id="contactos">
-  <h2>Contactos</h2>
-  <p>Email: a definir<br>Organização: Torneio de Fut 7 Angola</p>
-</section>
-
-</div>
-
 <footer>
-  <p>© Torneio de Fut 7 Angola | Todos os direitos reservados</p>
+  © 2026 – Torneio Fut 7 Angola | Todos os direitos reservados
 </footer>
 
 </body>
