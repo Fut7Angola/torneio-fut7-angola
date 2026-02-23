@@ -1,174 +1,79 @@
 <!DOCTYPE html>
-<html lang="pt-PT">
+<html lang="pt">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>Atletas | Torneio Fut 7 Angola</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      background-color: #0f0f0f;
-      color: #ffffff;
-    }
-
-    header {
-      background-color: #000;
-      padding: 20px 40px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
-
-    header img {
-      height: 70px;
-    }
-
-    nav a {
-      color: #fff;
-      margin-left: 20px;
-      text-decoration: none;
-      font-weight: bold;
-      font-size: 14px;
-    }
-
-    nav a:hover {
-      color: #f5c400;
-    }
-
-    .section {
-      padding: 60px 40px;
-      max-width: 1200px;
-      margin: auto;
-    }
-
-    h1, h2 {
-      color: #f5c400;
-      text-align: center;
-    }
-
-    .teams {
-      margin-top: 40px;
-    }
-
-    .team-block {
-      margin-bottom: 60px;
-    }
-
-    .athletes {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 25px;
-      margin-top: 30px;
-    }
-
-    .athlete-card {
-      background-color: #1a1a1a;
-      border-radius: 8px;
-      padding: 20px;
-      text-align: center;
-    }
-
-    .athlete-photo {
-      width: 100%;
-      height: 220px;
-      background-color: #333;
-      border-radius: 6px;
-      margin-bottom: 15px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: #aaa;
-      font-size: 14px;
-    }
-
-    .athlete-name {
-      font-weight: bold;
-      font-size: 16px;
-      margin-bottom: 5px;
-    }
-
-    .athlete-position {
-      font-size: 14px;
-      color: #ccc;
-    }
-
-    footer {
-      background-color: #000;
-      text-align: center;
-      padding: 20px;
-      font-size: 14px;
-      color: #aaa;
-    }
-
-    @media (max-width: 768px) {
-      header {
-        flex-direction: column;
-        gap: 15px;
-      }
-      nav a {
-        margin: 0 10px;
-      }
-    }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
 
-<header>
-  <img src="logo.png" alt="Torneio Fut 7 Angola">
-  <nav>
-    <a href="index.html">Início</a>
-    <a href="sobre.html">Sobre</a>
-    <a href="calendario.html">Calendário</a>
-    <a href="equipas.html">Equipas</a>
-    <a href="atletas.html">Atletas</a>
-    <a href="resultados.html">Resultados</a>
-    <a href="premios.html">Prémios</a>
-    <a href="parceiros.html">Parceiros</a>
-    <a href="regras.html">Regras</a>
-    <a href="contactos.html">Contactos</a>
-  </nav>
-</header>
-
-<section class="section">
-  <h1>Atletas em Competição</h1>
-
-  <!-- EQUIPA 1 -->
-  <div class="team-block">
-    <h2>Equipa A1</h2>
-    <div class="athletes">
-      <div class="athlete-card">
-        <div class="athlete-photo">Foto</div>
-        <div class="athlete-name">Nome do Atleta</div>
-        <div class="athlete-position">Posição</div>
-      </div>
-
-      <div class="athlete-card">
-        <div class="athlete-photo">Foto</div>
-        <div class="athlete-name">Nome do Atleta</div>
-        <div class="athlete-position">Posição</div>
-      </div>
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="container">
+      <h1>Torneio Fut 7 Angola</h1>
+      <nav>
+        <a href="index.html">Início</a>
+        <a href="equipas.html">Equipas</a>
+        <a href="atletas.html" class="active">Atletas</a>
+        <a href="calendario.html">Calendário</a>
+        <a href="contactos.html">Contactos</a>
+      </nav>
     </div>
-  </div>
+  </header>
 
-  <!-- EQUIPA 2 -->
-  <div class="team-block">
-    <h2>Equipa A2</h2>
-    <div class="athletes">
-      <div class="athlete-card">
-        <div class="athlete-photo">Foto</div>
-        <div class="athlete-name">Nome do Atleta</div>
-        <div class="athlete-position">Posição</div>
+  <!-- CONTEÚDO -->
+  <main class="container">
+    <h2 class="page-title">Atletas</h2>
+
+    <div class="atletas-grid">
+
+      <!-- ATLETA 1 -->
+      <div class="atleta-card">
+        <img src="img/atletas/atleta1.jpg" alt="Atleta 1">
+        <h3>Nome do Atleta</h3>
+        <p>Posição: Avançado</p>
+        <p>Nº 9</p>
+        <div class="social">
+          <a href="#" target="_blank">Facebook</a>
+          <a href="#" target="_blank">Instagram</a>
+        </div>
       </div>
+
+      <!-- ATLETA 2 -->
+      <div class="atleta-card">
+        <img src="img/atletas/atleta2.jpg" alt="Atleta 2">
+        <h3>Nome do Atleta</h3>
+        <p>Posição: Médio</p>
+        <p>Nº 8</p>
+        <div class="social">
+          <a href="#" target="_blank">Facebook</a>
+          <a href="#" target="_blank">Instagram</a>
+        </div>
+      </div>
+
+      <!-- ATLETA 3 -->
+      <div class="atleta-card">
+        <img src="img/atletas/atleta3.jpg" alt="Atleta 3">
+        <h3>Nome do Atleta</h3>
+        <p>Posição: Defesa</p>
+        <p>Nº 4</p>
+        <div class="social">
+          <a href="#" target="_blank">Facebook</a>
+          <a href="#" target="_blank">Instagram</a>
+        </div>
+      </div>
+
+      <!-- DUPLICA ESTE BLOCO ATÉ PERFZER 14 ATLETAS -->
+
     </div>
-  </div>
+  </main>
 
-</section>
-
-<footer>
-  © 2026 – Torneio Fut 7 Angola
-</footer>
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <p>© 2026 Torneio Fut 7 Angola. Todos os direitos reservados.</p>
+  </footer>
 
 </body>
 </html>
