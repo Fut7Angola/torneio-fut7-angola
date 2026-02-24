@@ -6,7 +6,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
 </head>
+<script>
+  const toggle = document.querySelector('.menu-toggle');
+  const nav = document.querySelector('.site-header nav');
 
+  toggle.addEventListener('click', () => {
+    nav.classList.toggle('show');
+  });
+</script>  
 <body>
 
 <header class="site-header">
