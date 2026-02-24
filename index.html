@@ -7,7 +7,16 @@
   <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+  <script>
+  const toggle = document.querySelector('.menu-toggle');
+  const nav = document.querySelector('.site-header nav');
+
+  toggle.addEventListener('click', () => {
+    nav.classList.toggle('show');
+  });
+</script>
+  
+  <body>
 
 <header class="site-header">
   <div class="container header-flex">
