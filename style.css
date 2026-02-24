@@ -331,3 +331,36 @@ table td {
   }
 
 }
+/* ===============================
+   HOME MOBILE
+================================ */
+
+@media (max-width: 768px) {
+
+  .hero {
+    padding: 40px 20px;
+    text-align: center;
+  }
+
+  .hero h2 {
+    font-size: 26px;
+    margin-bottom: 15px;
+  }
+
+  .hero p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 25px;
+  }
+
+  .cta-btn {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 16px;
+    border-radius: 8px;
+    background-color: #2563eb;
+    color: white;
+    text-decoration: none;
+  }
+
+}
