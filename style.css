@@ -444,3 +444,34 @@ body::before {
 .institucional h3 {
   color: #22c55e;
 }
+/* ===== GOLD SPONSOR NA HOME ===== */
+
+.home-gold {
+  margin-top: 80px;
+  text-align: center;
+}
+
+.home-gold h2 {
+  font-size: 32px;
+  color: #facc15;
+  margin-bottom: 40px;
+}
+
+.gold-highlight {
+  background: linear-gradient(135deg, rgba(250,204,21,0.15), rgba(250,204,21,0.05));
+  padding: 40px;
+  border-radius: 20px;
+  border: 2px solid #facc15;
+  box-shadow: 0 0 40px rgba(250, 204, 21, 0.25);
+  display: inline-block;
+  transition: 0.3s ease;
+}
+
+.gold-highlight img {
+  max-width: 300px;
+  height: auto;
+}
+
+.gold-highlight:hover {
+  transform: scale(1.05);
+}
