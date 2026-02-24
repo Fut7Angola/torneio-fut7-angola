@@ -309,7 +309,7 @@ table td {
 @media (max-width: 768px) {
 
   .menu-toggle {
-    display: block;
+    display: none;
   }
 
   .site-header nav {
