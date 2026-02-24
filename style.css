@@ -371,3 +371,76 @@ body::before {
     opacity: 0.04;
   }
 }
+/* ===== CARDS MODERNOS ===== */
+
+.card,
+.sponsor-card,
+.team-card,
+.player-card {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 18px;
+  padding: 20px;
+  transition: all 0.3s ease;
+}
+
+/* Hover elegante */
+.card:hover,
+.sponsor-card:hover,
+.team-card:hover,
+.player-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+}
+
+/* Títulos mais leves */
+.card h3,
+.team-card h3,
+.player-card h3 {
+  color: #facc15;
+  margin-bottom: 10px;
+}
+/* ===== NÍVEIS DE PATROCÍNIO PREMIUM ===== */
+
+/* GOLD */
+.gold h3 {
+  color: #facc15;
+  font-size: 30px;
+}
+
+.gold .sponsor-card {
+  height: 180px;
+  border: 2px solid #facc15;
+  box-shadow: 0 0 25px rgba(250, 204, 21, 0.3);
+}
+
+/* SILVER */
+.silver h3 {
+  color: #d1d5db;
+}
+
+.silver .sponsor-card {
+  height: 150px;
+  border: 2px solid #cbd5e1;
+}
+
+/* BRONZE */
+.bronze h3 {
+  color: #cd7f32;
+}
+
+.bronze .sponsor-card {
+  height: 130px;
+  border: 2px solid #cd7f32;
+}
+
+/* MEDIA */
+.media h3 {
+  color: #38bdf8;
+}
+
+/* INSTITUCIONAL */
+.institucional h3 {
+  color: #22c55e;
+}
