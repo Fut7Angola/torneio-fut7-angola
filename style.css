@@ -480,3 +480,8 @@ body::before {
 .gold-highlight:hover {
   transform: scale(1.05);
 }
+.equipa-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
