@@ -7,36 +7,9 @@
   <link rel="stylesheet" href="style.css">
 </head>
 
-  <script>
-  const toggle = document.querySelector('.menu-toggle');
-  const nav = document.querySelector('.site-header nav');
+  <header class="site-header">
+  <div class="container header-flex">
 
-  toggle.addEventListener('click', () => {
-    nav.classList.toggle('show');
-  });
-</script>
-<script>
-  const toggle = document.querySelector('.menu-toggle');
-  const nav = document.querySelector('.site-header nav');
-
-  toggle.addEventListener('click', () => {
-    nav.classList.toggle('show');
-  });
-</script>  
-
-  <script>
-  const toggle = document.querySelector('.menu-toggle');
-  const nav = document.querySelector('.site-header nav');
-
-  toggle.addEventListener('click', () => {
-    nav.classList.toggle('show');
-  });
-</script>
-  
-  <body>
-
-<header class="site-header">
-  <div class="container">
     <div class="logo-area">
       <img src="logo.png" alt="Torneio Fut 7 Angola">
       <h1>Torneio Fut 7 Angola</h1>
@@ -56,6 +29,7 @@
       <a href="regras.html">Regras</a>
       <a href="contactos.html">Contactos</a>
     </nav>
+
   </div>
 </header>
 
@@ -82,6 +56,17 @@
     <p>© 2026 – Torneio Fut 7 Angola | Luanda – Angola</p>
   </div>
 </footer>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const toggle = document.querySelector(".menu-toggle");
+    const nav = document.querySelector(".site-header nav");
 
+    if (toggle && nav) {
+      toggle.addEventListener("click", function () {
+        nav.classList.toggle("show");
+      });
+    }
+  });
+</script>  
 </body>
 </html>
