@@ -238,3 +238,58 @@ table td {
 .site-header nav {
   margin-left: auto;
 }
+/* ===============================
+   MOBILE (TELEMÓVEL)
+================================ */
+
+@media (max-width: 768px) {
+
+  /* HEADER */
+  .header-flex {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .logo-area {
+    justify-content: center;
+  }
+
+  .logo-area h1 {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  /* MENU */
+  .site-header nav {
+    margin-left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .site-header nav a {
+    font-size: 14px;
+    padding: 6px 10px;
+    border-radius: 6px;
+    background-color: #020617;
+  }
+
+  /* TÍTULOS */
+  .page-title {
+    font-size: 24px;
+    margin-bottom: 25px;
+  }
+
+  /* CARDS */
+  .card {
+    padding: 20px;
+  }
+
+  /* TABELAS */
+  table {
+    font-size: 13px;
+  }
+
+}
