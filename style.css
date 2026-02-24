@@ -328,7 +328,7 @@ table td {
 
   .site-header nav.show {
     display: flex;
-  }
+    flex-direction: column;  }
 
 }
 /* ===============================
