@@ -203,3 +203,66 @@ body {
     font-size: 16px;
   }
 }
+/* ===== HOME - EQUIPAS ===== */
+.home-equipas {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.home-equipas h3 {
+  font-size: 28px;
+  color: #facc15;
+  margin-bottom: 40px;
+}
+
+.equipas-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.equipa-card {
+  background: #020617;
+  border: 1px solid #1e293b;
+  border-radius: 12px;
+  padding: 25px;
+}
+
+.equipa-card h4 {
+  margin: 0;
+  font-size: 18px;
+  color: #ffffff;
+}
+
+.equipa-card p {
+  margin-top: 8px;
+  font-size: 14px;
+  color: #facc15;
+}
+
+.home-link {
+  margin-top: 30px;
+}
+
+.home-link a {
+  color: #38bdf8;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.home-link a:hover {
+  text-decoration: underline;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .equipas-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .home-equipas h3 {
+    font-size: 24px;
+  }
+}
