@@ -364,3 +364,31 @@ table td {
   }
 
 }
+/* ===== MENU MOBILE ===== */
+@media (max-width: 768px) {
+
+  /* Mostra o botão ☰ */
+  .menu-toggle {
+    display: block;
+    font-size: 26px;
+    background: none;
+    border: none;
+    color: #facc15;
+    cursor: pointer;
+  }
+
+  /* Esconde o menu normal */
+  .site-header nav {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #020617;
+    padding: 15px 0;
+  }
+
+  /* Mostra o menu quando carregas no ☰ */
+  .site-header nav.show {
+    display: flex;
+  }
+
+}
