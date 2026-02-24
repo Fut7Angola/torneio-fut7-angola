@@ -357,7 +357,7 @@ body::before {
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
-  opacity: 0.05; /* MUITO SUAVE */
+  opacity: 0.15; /* MUITO SUAVE */
   transform: translate(-50%, -50%);
   z-index: -1;
   pointer-events: none;
