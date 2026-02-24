@@ -6,6 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
 </head>
+
+<body>
+
 <header class="site-header">
   <div class="container header-flex">
 
@@ -14,7 +17,7 @@
       <h1>Torneio Fut 7 Angola</h1>
     </div>
 
-    <button class="menu-toggle" aria-label="Menu">☰</button>
+    <button class="menu-toggle">☰</button>
 
     <nav>
       <a href="index.html">Início</a>
@@ -24,7 +27,7 @@
       <a href="atletas.html">Atletas</a>
       <a href="resultados.html">Resultados</a>
       <a href="premios.html">Prémios</a>
-      <a href="parceiros.html">Parceiros</a>
+      <a href="parceiros.html" class="active">Parceiros</a>
       <a href="regras.html">Regras</a>
       <a href="contactos.html">Contactos</a>
     </nav>
@@ -34,62 +37,71 @@
 
 <main class="container">
 
-  <h2 class="page-title">Parceiros Oficiais</h2>
+  <h2 class="page-title">Patrocinadores & Parceiros</h2>
 
-  <section class="card">
-    <p>
-      O Torneio Fut 7 Angola agradece o apoio dos seus parceiros,
-      fundamentais para a realização deste evento desportivo.
-    </p>
+  <!-- GOLD -->
+  <section class="sponsor-level gold">
+    <h3>Gold Sponsors</h3>
+    <div class="sponsor-grid large">
+      <div class="sponsor-card">LOGO</div>
+      <div class="sponsor-card">LOGO</div>
+    </div>
   </section>
 
-  <!-- PARCEIROS -->
-  <section class="card">
-    <h3>Patrocinadores</h3>
+  <!-- SILVER -->
+  <section class="sponsor-level silver">
+    <h3>Silver Sponsors</h3>
+    <div class="sponsor-grid medium">
+      <div class="sponsor-card">LOGO</div>
+      <div class="sponsor-card">LOGO</div>
+      <div class="sponsor-card">LOGO</div>
+    </div>
+  </section>
 
-    <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 30px; text-align:center;">
+  <!-- BRONZE -->
+  <section class="sponsor-level bronze">
+    <h3>Bronze Sponsors</h3>
+    <div class="sponsor-grid small">
+      <div class="sponsor-card">LOGO</div>
+      <div class="sponsor-card">LOGO</div>
+      <div class="sponsor-card">LOGO</div>
+      <div class="sponsor-card">LOGO</div>
+    </div>
+  </section>
 
-      <div>
-        <img src="logo-parceiro1.png" alt="Parceiro 1" style="max-width:140px;">
-        <p>Nome do Parceiro</p>
-      </div>
+  <!-- MEDIA -->
+  <section class="sponsor-level media">
+    <h3>Media Partners</h3>
+    <div class="sponsor-grid small">
+      <div class="sponsor-card">LOGO</div>
+      <div class="sponsor-card">LOGO</div>
+    </div>
+  </section>
 
-      <div>
-        <img src="logo-parceiro2.png" alt="Parceiro 2" style="max-width:140px;">
-        <p>Nome do Parceiro</p>
-      </div>
-
-      <div>
-        <img src="logo-parceiro3.png" alt="Parceiro 3" style="max-width:140px;">
-        <p>Nome do Parceiro</p>
-      </div>
-
-      <div>
-        <img src="logo-parceiro4.png" alt="Parceiro 4" style="max-width:140px;">
-        <p>Nome do Parceiro</p>
-      </div>
-
+  <!-- INSTITUCIONAL -->
+  <section class="sponsor-level institucional">
+    <h3>Apoio Institucional</h3>
+    <div class="sponsor-grid small">
+      <div class="sponsor-card">LOGO</div>
+      <div class="sponsor-card">LOGO</div>
     </div>
   </section>
 
 </main>
 
 <footer class="site-footer">
-  <div class="container">
-    <p>© 2026 – Torneio Fut 7 Angola | Luanda – Angola</p>
-  </div>
+  <p>© 2026 – Torneio Fut 7 Angola</p>
 </footer>
+
 <script>
   document.addEventListener("DOMContentLoaded", function () {
     const toggle = document.querySelector(".menu-toggle");
     const nav = document.querySelector(".site-header nav");
-
-    if (toggle && nav) {
-      toggle.addEventListener("click", function () {
-        nav.classList.toggle("show");
-      });
-    }
+    toggle.addEventListener("click", () => {
+      nav.classList.toggle("show");
+    });
   });
-</script>  
+</script>
+
 </body>
 </html>
