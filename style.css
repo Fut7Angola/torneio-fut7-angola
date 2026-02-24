@@ -144,11 +144,6 @@ body {
 .site-header nav a:hover {
   color: #facc15;
 }
-
-  .logo-area img {
-  max-height: 40px;
-  width: auto;
-  object-fit: contain;}
   
   /* ===============================
    TÍTULOS
@@ -214,4 +209,30 @@ table td {
   text-align: center;
   font-size: 13px;
   color: #9ca3af;
+}
+/* ===============================
+   LOGO NO HEADER
+================================ */
+
+.header-flex {
+  display: flex;
+  align-items: center;
+}
+
+.logo-area {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.logo-area img {
+  height: 50px;
+}
+
+.logo-area h1 {
+  margin: 0;
+}
+
+.site-header nav {
+  margin-left: auto;
 }
