@@ -227,6 +227,8 @@ table td {
 
 .logo-area img {
   height: 50px;
+  width: auto;
+  object-fit: contain;
 }
 
 .logo-area h1 {
